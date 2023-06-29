@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InteliMoney" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blueTheme</item>
+        <item name="colorPrimaryVariant">@color/blueTheme</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--  Temas personalizados para o App  -->
+
+    <!-- Tema para esconder a Toolbar-->
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+
+    <!-- Tema para esconder a Toolbar-->
+    <style name="toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Tema aplicado na tela de Splash e Login-->
+    <style name="appTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/blueTheme</item>
+        <item name="colorPrimaryDark">@color/blueTheme</item>
+    </style>
+
+    <!-- Tema aplicado na ToolBar do App-->
+    <style name="toolBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/blueTheme</item>
+        <item name="colorPrimaryDark">@color/blueTheme</item>
+    </style>
+
+    <!-- Tema para os botões -->
+    <style name="buttonTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="backgroundTint">@color/blueTheme</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/borda</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--  Tema Bottom Navigation View Principal  -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorOnPrimary">@color/blueTheme</item>
+    </style>
+
+
+    <!-- Tema aplicado na tela de Receita-->
+    <style name="receitaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/receita</item>
+        <item name="colorPrimaryDark">@color/receita</item>
+    </style>
+
+    <!-- Tema para os botões das categorias receita-->
+    <style name="buttonThemeReceita" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="backgroundTint">@color/receita</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/borda_receita</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Tema aplicado na tela de Despesa-->
+    <style name="DespesaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/despesa</item>
+        <item name="colorPrimaryDark">@color/despesa</item>
+    </style>
+
+    <!-- Tema para os botões das categorias despesa -->
+    <style name="buttonThemeDespesa" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="backgroundTint">@color/despesa</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/borda_despesa</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

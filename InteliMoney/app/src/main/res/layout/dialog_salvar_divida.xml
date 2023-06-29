@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar dívida"
+        android:textAlignment="center"
+        android:textColor="@color/parseBlack"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editNomeDivida"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/borda"
+        android:hint="Nome da dívida"
+        android:padding="10dp"/>
+
+    <com.blackcat.currencyedittext.CurrencyEditText
+        android:id="@+id/editValorDivida"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/borda"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/txtVencimento"
+        android:background="@drawable/borda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Data de vencimento"
+        android:padding="12dp"
+        android:textColor="@color/parseBlack"
+        android:textColorHint="@color/lightGrey"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/btnFechar"
+            style="@style/buttonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:text="Fechar" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            style="@style/buttonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:text="Salvar" />
+    </LinearLayout>
+
+</LinearLayout>

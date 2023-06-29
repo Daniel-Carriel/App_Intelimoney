@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "8190532038",
+    "project_id": "intelimoney-e4262",
+    "storage_bucket": "intelimoney-e4262.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8190532038:android:74465f0dc1d2904556bac7",
+        "android_client_info": {
+          "package_name": "com.example.intelimoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8190532038-f1ffebnnsp04m2tb3lce4cepdn93svfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFeY5rG6lrWE9tqg0B8tmRfqvjx3qiIjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8190532038-f1ffebnnsp04m2tb3lce4cepdn93svfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

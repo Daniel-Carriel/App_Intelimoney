@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueTheme"
+    tools:context=".activity.objetivos.ObjetivoCriarActivity">
+
+    <LinearLayout
+        android:id="@+id/itemObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="Valor total do objetivo"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.blackcat.currencyedittext.CurrencyEditText
+            android:id="@+id/editValorObjetivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemObjetivo">
+
+
+        <com.blackcat.currencyedittext.CurrencyEditText
+            android:id="@+id/editValorDeposito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_coin"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/editNomeObjetivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="15dp"
+            android:hint="Nome do objetivo"
+            android:padding="10dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteY="123dp" />
+
+
+        <EditText
+            android:id="@+id/editDescricaoObjetivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_descricao"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="@string/descricao"
+            android:inputType="textPersonName"
+            android:padding="11dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"
+            tools:layout_editor_absoluteY="276dp" />
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawablePadding="15dp"
+            android:hint="@string/data"
+            android:padding="10dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteY="214dp" />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddObjetivio"
+            android:backgroundTint="@color/blueTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/ic_check"
+            app:maxImageSize="40dp"
+            app:tint="@color/white"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

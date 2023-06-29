@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blueTheme"
+    android:gravity="center"
+    tools:context=".activity.objetivos.ObjetivoConcluidoActivity">
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/trofeu_objetivo" />
+
+    <TextView
+        android:id="@+id/txtParabens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Parabéns!"
+        android:textAlignment="center"
+        android:textColor="#EAB737"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtFalarObjetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="60dp"
+        android:text="Você concluiu o objetivo:\nMeu primeiro carro"
+        android:textAlignment="center"
+        android:textColor="#EAB737"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+
+
+</LinearLayout>

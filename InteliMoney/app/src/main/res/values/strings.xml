@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">InteliMoney</string>
+
+    <!--  SplashActivity  -->
+    <string name="saudacao">Bem Vindo!</string>
+
+    <!--  LoginActivity  -->
+    <string name="esqueceuSenha">Esqueceu a senha?</string>
+    <string name="cadastreSe">Cadastre-se</string>
+    <string name="entrar">Entrar</string>
+
+    <!--  CadastroActivity  -->
+    <string name="crieSuaConta">Crie sua conta grátis</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="criarConta">Cadastrar</string>
+
+    <!--  RedefinirSenhaActivity  -->
+    <string name="tituloActivity">Redefinição de senha</string>
+    <string name="instrucao">Digite o email de usuário cadastrado.</string>
+    <string name="botao">Enviar Email</string>
+
+    <!--  PrincipalActivity  -->
+    <string name="menu_home">Principal</string>
+    <string name="menu_transacoes">Transações</string>
+    <string name="menu_planejamento">Planejamento</string>
+    <string name="menu_mais">Mais</string>
+    <string name="fab_receita">Receita</string>
+    <string name="fab_despesa">Despesa</string>
+
+    <!--  ReceitaActivity e DespesaActivity -->
+    <string name="valorReceita">Valor da Receita</string>
+    <string name="valorDespesa">Valor da Despesa</string>
+    <string name="sifrao">R$</string>
+    <string name="data">Data</string>
+    <string name="descricao">Descrição</string>
+    <string name="conta">Conta</string>
+    <string name="categoria">Categoria</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

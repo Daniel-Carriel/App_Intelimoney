@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InteliMoney"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.QuadroDividasActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.PrincipalActivity"
+            android:theme="@style/toolBarTheme"/>
+        <activity
+            android:name=".activity.objetivos.ObjetivoConcluidoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.objetivos.ObjetivoDepositosActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.objetivos.ObjetivoMostrarActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".activity.objetivos.ObjetivoMostrarActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.PrincipalActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".activity.objetivos.ObjetivoCriarActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.objetivos.ObjetivoActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".activity.objetivos.ObjetivoActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.PrincipalActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".activity.MeuPerfilActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.PrincipalActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".contas.MinhaContaListaActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.PrincipalActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".contas.CriarContaActivity"
+            android:exported="false"
+            android:parentActivityName=".contas.MinhaContaListaActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".activity.transacoes.DespesaActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.PrincipalActivity"
+            android:theme="@style/DespesaTheme" />
+        <activity
+            android:name=".activity.transacoes.ReceitaActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.PrincipalActivity"
+            android:theme="@style/receitaTheme" />
+        <activity
+            android:name=".activity.PrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.autenticacao.CadastroActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.autenticacao.LoginActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".activity.autenticacao.RedefinirSenhaActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.autenticacao.LoginActivity"
+            android:theme="@style/toolBarTheme" />
+        <activity
+            android:name=".activity.autenticacao.LoginActivity"
+            android:exported="false"
+            android:theme="@style/appTheme" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/appTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

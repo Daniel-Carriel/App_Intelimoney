@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/receita"
+    tools:context=".activity.transacoes.ReceitaActivity">
+
+
+    <LinearLayout
+        android:id="@+id/itemObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/valorReceita"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.blackcat.currencyedittext.CurrencyEditText
+            android:id="@+id/editValorReceita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutReceita"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemObjetivo">
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:drawablePadding="15dp"
+            android:hint="@string/data"
+            android:padding="10dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editDescricaoReceita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_descricao"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="@string/descricao"
+            android:inputType="textPersonName"
+            android:padding="11dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"/>
+
+
+        <TextView
+            android:id="@+id/txtCategoriaReceita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:drawableLeft="@drawable/ic_categoria"
+            android:drawablePadding="15dp"
+            android:hint="@string/categoria"
+            android:padding="10dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtContaReceita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:drawableLeft="@drawable/ic_carteira"
+            android:drawablePadding="15dp"
+            android:hint="@string/conta"
+            android:padding="10dp"
+            android:textColor="@color/parseBlack"
+            android:textColorHint="@color/lightGrey"
+            android:textSize="18sp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdicionarReceita"
+            android:backgroundTint="@color/receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/ic_check"
+            app:maxImageSize="40dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
